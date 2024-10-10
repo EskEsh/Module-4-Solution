@@ -4,27 +4,17 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 helloSpeaker.speak(); 
 byeSpeaker.speak();
 
-(function (name) {
-  console.log(speak + " " + name);
-})(windows);
-
+function (name) {
 for (var i = 0; i < names.length; i++) {
-  console.log(speak + " " + names[i]);
-}
-
-function getFirstLetter(name) {
-firstLetter = charAt(0).toLowerCase;
-}
-var firstLetter = getFirstLetter(name);
-
-for (var i = 0; i < names.length; i++) {
-return firstLetter(names[i]);
-
+var firstLetter = function (name) {
+return charAt(0).toLowerCase; 
+}; 
 if (firstLetter == 'j') {
-    byeSpeaker.speak(name);
-  } else {
-    helloSpeaker.speak(name); 
-  }
+ console.log(byeSpeaker.speak(names[i]));
+   } else {
+ console.log(helloSpeaker.speak(names[i])); 
+   }
+ }
 }
 
 })(window);
